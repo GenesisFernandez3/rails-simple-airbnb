@@ -1,0 +1,8 @@
+<h1>All our Flats</h1>
+
+<ul>
+<% @flats.each do |flat|%>
+<li><%= link_to flat.name, flat_path(flat) %></li>
+<%end%>
+</ul>
+<p class="btn btn-light my-3"><%= link_to 'Crear Flat', new_flat_path%></p>

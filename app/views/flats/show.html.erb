@@ -1,0 +1,17 @@
+<h1>Flat Description</h1>
+<h2><%=@flat.name%></h2>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-light">Address: <%=@flat.address%></li>
+  <li class="list-group-item list-group-item-light">Description: <%=@flat.description%></li>
+  <li class="list-group-item list-group-item-light">Price per night: <%=@flat.price_per_night%></li>
+  <li class="list-group-item list-group-item-light">Number of guests: <%=@flat.number_of_guests%></li>
+</ul>
+
+<%= link_to "Back To Flats", flats_path, class: "btn btn-light m-3" %>
+
+<%= link_to "Update Flat", edit_flat_path, class: "btn btn-danger my-3" %>
+
+<p class="btn btn-light m-3"><%= link_to "Delete This Flat",
+            flat_path(@flat),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>

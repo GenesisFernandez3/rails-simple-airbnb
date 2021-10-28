@@ -1,0 +1,10 @@
+<%= simple_form_for [ @flat ] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit "Submit Flat", class:"btn btn-success my-2" %>
+<% end %>
+
+<p class="btn btn-light my-3"><%= link_to 'Back to flats', flats_path%> </p>>
